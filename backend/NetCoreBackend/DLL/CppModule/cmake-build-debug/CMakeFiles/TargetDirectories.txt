@@ -1,0 +1,3 @@
+/Users/tanzhongyu/CLionProjects/CppModule/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tanzhongyu/CLionProjects/CppModule/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tanzhongyu/CLionProjects/CppModule/cmake-build-debug/CMakeFiles/CppModule.dir

@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=_002FUsers_002Ftanzhongyu_002FCLionProjects_002FCppModule_002Fcmake_002Dbuild_002Ddebug_002FlibCppModule_002Edylib/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=_002FUsers_002Ftanzhongyu_002FRiderProjects_002FComModule_002FComModule_002Fbin_002FRelease_002Fnet5_002E0_002FComModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=_002FUsers_002Ftanzhongyu_002FRiderProjects_002FNeo4jService_002FNeo4jService_002Fbin_002FRelease_002Fnet5_002E0_002FNeo4jService_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=_002FUsers_002Ftanzhongyu_002FRiderProjects_002FShareModule_002FShareModule_002Fbin_002FRelease_002Fnet5_002E0_002FShareModule_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
+  &lt;Assembly Path="/Users/tanzhongyu/RiderProjects/ComModule/ComModule/bin/Release/net5.0/ComModule.dll" /&gt;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

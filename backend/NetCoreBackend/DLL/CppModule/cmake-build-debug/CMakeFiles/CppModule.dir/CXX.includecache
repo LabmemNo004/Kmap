@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tanzhongyu/CLionProjects/CppModule/Tools.cpp
+Tools.h
+/Users/tanzhongyu/CLionProjects/CppModule/Tools.h
+
+/Users/tanzhongyu/CLionProjects/CppModule/Tools.h
+

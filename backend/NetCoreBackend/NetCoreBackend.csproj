@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+        <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+        <PackageReference Include="Neo4j.Driver" Version="4.3.1" />
+        <PackageReference Include="Neo4j.Driver.Simple" Version="4.3.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="ComModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\ComModule\ComModule\bin\Release\net5.0\ComModule.dll</HintPath>
+      </Reference>
+      <Reference Include="Neo4jService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\Neo4jService\Neo4jService\bin\Release\net5.0\Neo4jService.dll</HintPath>
+      </Reference>
+      <Reference Include="ShareModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\ShareModule\ShareModule\bin\Release\net5.0\ShareModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
