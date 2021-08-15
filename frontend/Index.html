@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search and Show</title>
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/jquery-confirm-v3.3.4/dist/jquery-confirm.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-5.15.3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="./vendor/pace-1.2.4/themes/blue/pace-theme-flash.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/unicons.css">
+    <link rel="icon" href="./images/logo.png">
+</head>
+<body>
+
+
+<!-- Projects -->
+<div id="projects" class="filter" style="padding-top: 1rem;padding-bottom: 1rem">
+    <div class="container" style="padding: 0;">
+        <div class="row">
+            <div class="col-lg-12" style="padding: 0;height: 6rem">
+                <div id="test" class="section-title" style="font-family: 'MV Boli'">Knowledge Graph</div>
+                <h2 style="font-family: 'Ink Free'">Software Organizations Worldwide</h2>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div id="buttons"style="display: none">
+        <button id="unlock" class="btn-solid-lg page-scroll"
+                style="font-size: small">
+            <i class="fas fa-unlock"></i>
+        </button>
+        <button id="remove" class="btn-solid-lg page-scroll"
+                style="font-size: small">
+            <i class="far fa-eye-slash"></i>
+        </button>
+        <button id="span" class="btn-solid-lg page-scroll"
+                style="font-size: small">
+            <i class="fas fa-bezier-curve"></i>
+        </button>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+
+                <div id="graph" class="graph mx-auto">
+                    <div id="load" style="text-align: left"><img src="./images/new_loader.gif" style="height:50px;text-align: left;margin-left: 0.5rem">
+                    </div>
+
+                </div>
+
+                <div id="tools" class="message mx-auto">
+                    <div id="search" class="search mx-auto">
+                        <form id="searchNodeForm">
+                            <div class="form-group">
+                                <div class="form-group"
+                                     style="display: inline-flex;align-content: center;width: 100%;">
+                                    <span style="color:#787976;font-weight: bold;display: inline-flex;flex-basis: 35%;align-items: center;justify-content: center;">Node Type:</span>
+                                    <select id="node_type" class="selectpicker show-menu-arrow show-tick" tabindex="1"
+                                            data-live-search="true"
+                                            style="display: inline-flex;" data-width="100%"
+                                            data-size="5">
+                                        <option>Organization</option>
+                                        <option>Person</option>
+                                    </select>
+                                </div>
+                                <div class="form-group"
+                                     style="display: inline-flex;align-content: center;width: 100%;">
+                                    <span style="color:#787976;font-weight: bold;display: inline-flex;flex-basis: 35%;align-items: center;justify-content: center;">Node Limit:</span>
+                                    <select id="node_limit" class="selectpicker show-menu-arrow show-tick" tabindex="1"
+                                            data-live-search="true"
+                                            style="display: inline-flex;" data-width="100%"
+                                            data-size="5">
+                                        <option>1</option>
+                                        <option>5</option>
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>30</option>
+                                        <option>50</option>
+                                        <option>100</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" style="display:none">
+                                    <input value="" class="form-control-input" id="input_node_name" tabindex="2"
+                                           name="input_node_name"
+                                           autocomplete="off" autofocus>
+                                    <label class="label-control" for="input_node_name"><i class="fas fa-search-plus"></i>&nbsp;Node Name</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="content" class="content mx-auto">
+
+                        <div class="col-lg-4 btn-local0"
+                             style="color: rgb(147,147,147);font-family: 'Ink Free';margin: 0.5rem 1rem 1rem 1rem;width: 90%">
+                            <h3 id="title" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-top: 0.5rem"
+                                title="Type">Detail</h3>
+                            <hr class="line-heading">
+                            <div id="details">
+                                <div id="d1" >
+                                    <h6 style="float: left;width: 100%" class="ll"></h6>
+                                    <b style="float: right;width: 100%;margin-bottom: 2rem" class="rr"></b>
+                                </div>
+                                <div id="d2" >
+                                    <h6 style="float: left;width: 100%" class="ll"></h6>
+                                    <b style="float: right;width: 100%;margin-bottom: 2rem" class="rr"></b>
+                                </div>
+                                <div id="d3">
+                                    <h6 style="float: left;width: 100%" class="ll"></h6>
+                                    <b style="float: right;width: 100%;margin-bottom: 2rem" class="rr"></b>
+                                </div>
+                                <div id="d4">
+                                    <h6 style="float: left;width: 100%" class="ll"></h6>
+                                    <b style="float: right;width: 100%;margin-bottom: 2rem" class="rr"></b>
+                                </div>
+                                <div id="d5">
+                                    <h6 style="float: left;width: 100%" class="ll"></h6>
+                                    <a style="float: right;width: 100%;margin-bottom: 2rem" class="rr"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end of filter -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+
+
+
+    </div> <!-- end of container -->
+</div> <!-- end of filter -->
+<!-- end of projects -->
+<script src="//unpkg.com/d3-quadtree"></script>
+<script src="//unpkg.com/d3-force"></script>
+<script src="//unpkg.com/force-graph"></script>
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./vendor/jquery/jquery.easing.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./vendor/toastr/toastr.min.js"></script>
+<script src="./vendor/pace-1.2.4/pace.min.js"></script>
+
+</body>
+</html>
